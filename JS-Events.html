@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML DOM allows JavaScript to react to HTML events: </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+<body>
+
+<h2> 
+A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+</h2>
+<h3> 
+To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:
+</h3>
+
+<p>
+ <strong>  Examples of HTML events: </strong>
+  When a web page has loaded <br>
+  When an image has been loaded <br>
+  When the mouse moves over an element <br>
+  When an input field is changed <br>
+  When an HTML form is submitted <br>
+  When a user strokes a key <br>
+</p>
+
+<h4> 
+  The onchange event is often used in combination with validation of input fields.
+</h4>
+
+<p>
+  Below is an example of how to use the onchange. 
+  The upperCase() function will be called when a user changes the content of an input field.
+</p>
+
+<form action="">
+  <input type="text" id="fname" placeholder="Enter Your First Name" onchange="upperCase()">
+  <!-- <button type="button" id="changeText"> Change input text </button> -->
+</form>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<!-- Click me to change the text -->
+<h2 onclick="this.innerHTML='oops!' "> click me to change the text </h2>
+<!-- End -->
+
+<button id="btn" onclick="">
+  The time is ?
+</button>
+
+<div class="thank-you-box"> 
+  
+</div>
+
+</body>
+  
+
+<script>
+
+
+// Example 1
+let a = displayDate = () =>{
+  document.getElementById("demo").innerHTML = Date();
+}
+document.getElementById("myBtn").onclick = a;
+
+// Example2 
+function upperCase(){
+  let fname = document.getElementById("fname");
+  fname.value = fname.value.toUpperCase();
+}
+
+// Example3 
+// The onmouseover and onmouseout Events
+
+
+
+// Example4 
+// Example5 
+// Example6 
+// Example7 
+// Example8
+// Example9
+
+
+</script>
+
+
+</html>

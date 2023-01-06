@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use of Javascript alert,prompt,confirm   </title>
+</head>
+<body>
+
+
+        
+            <h2> 
+                Q1. Write a program using prompt function to take input of age as a value from the user 
+                and used alert method to tell him if he can drive!
+            </h2>
+
+            <h2> 
+                Q2. In Q1 use confirm to ask the user if he wants to see the prompt again 
+            </h2>
+
+            <h3>
+                Q3. In the previous question, use console error to log the error if the age is entered is negative. 
+            </h3>
+
+            <h3> 
+                Q4. Write a Programm to change the url to google.com if users enters a number greater than 4
+            </h3>
+
+            <h3>
+                Q5.Change the background of the age to yellow red or other color based on user input through prompt.
+            </h3>
+            
+
+        <script>    
+        // alert("Enter the value of input");
+        // let input = prompt("Enter the value of input here");
+        // input = Number.parseInt(input);
+        // let confirmNumber = confirm("Do you really want to print it ?");
+        // if (confirmNumber){
+        //     document.getElementById("answer1").innerHTML = "The value of input is " + input; 
+        // }
+        // else{
+        //     document.getElementById("answer1").innerHTML = "Please Confirm the value first"; 
+        // }
+        //alert(typeof (input));
+
+
+        // let age = prompt("Enter the age");
+        // age = Number.parseInt(age);
+
+        //  if(age > 4){
+        //     window.location.href = "https://google.com";
+        // }
+
+        //  if (age >= 18){
+        //     alert("You can drive!")
+        // }
+        // else if(age < 0){
+        //     console.error("You have entered a Negative Number");
+        // }
+        // else{
+        //     alert("You can't drive!");
+        // }
+
+        // let color = prompt("Enter the page background color");
+        // document.body.style.background = color;
+
+
+
+        let runAgain = true;
+        const canDrive = (age)=>{
+           return age >= 18 ? true : false
+        }
+
+        while(runAgain){
+        let age = prompt ("Enter Your age ?");
+        age = Number.parseInt(age);
+        if(canDrive(age)){
+            alert("Yes You can drive");
+        }
+        else{
+            alert ("You can't drive");
+        }
+        runAgain = confirm ("Do You want to play Again ?");
+    }
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Introduction to Javascript Arrays  </title>
+</head>
+<body>
+
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Chapter13 JS Arrays Introduction");
+   
+    /*
+    Arrays :- Arrays are generally described as "list-like objects"; 
+    they are basically single objects that contain multiple values stored in a list.
+    Array objects can be stored in variables and dealt with in much the same way as any other type
+    of value
+    */
+
+    // Arrays are Mutable
+    // Strings are immutable strings can't be changed
+    let marksof12th = [92,93,94,"Failed",null,35];
+    marksof12th[6] = "Pending"; // In arrays we can add value later by selecting their index number and assigning a new value
+    console.log(marksof12th);
+    console.log(marksof12th[0]);
+    console.log(marksof12th[1]);
+    console.log(marksof12th[2]);
+    console.log(marksof12th[3]);
+    console.log(marksof12th[4]);
+    console.log(marksof12th[5]);
+    console.log(marksof12th[6]); // Will be undefined because the the index 6 doesn't exist
+    
+
+    const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+    let abc = "";
+    for(let i = 0; i < shopping.length; i++){
+      //  console.log(shopping[i]);
+     // abc +=  i;
+      document.getElementById("demo1").innerHTML = shopping[i];
+    }    
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Attribute Method </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+  padding: 10px 0;
+  margin: 10px 30px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.democlass{
+  color: red;
+}
+
+</style>
+
+
+<body>
+
+
+  
+  <!-- <p id="demo"> 
+    The getAttribute() Method
+  </p>
+
+  <h2 id="name"></h2> -->
+
+  <p id="demo"> 
+    The Element Object
+  </p>
+  <div class="abc"><div id="demo"></div></div>
+        
+  <a href="#" id="myAnchor"> link </a>
+
+  <button type="button" id="commonbutton"> 
+    click
+  </button>
+ 
+
+</body>
+  
+  
+   
+
+
+<script>
+
+  // Attribute Method 
+
+  // Get Attribute returns the 
+  // let a = document.getElementById("demo");
+  // let b = a.getAttribute("id");
+  // document.getElementById("name").innerHTML = b;
+
+
+  //Set attribute
+   document.getElementById("demo").setAttribute("class", "democlass"); 
+
+   //RemoveAttribute
+   document.getElementById("myAnchor").removeAttribute("href");
+
+  // Has Attribute
+    // const myButton = document.getElementById("commonbutton");
+    // let answer = myButton.hasAttribute("id");
+    // console.log(answer); // Returns as true
+
+
+ // document.getElementById("demo").innerHTML = text;
+
+    
+</script>
+
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chapter7 Practice set  </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+padding: 10px 0;
+margin: 10px 30px;
+display: block;
+color: #fff;
+text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+  <h4>
+    Q1. Create a navbar and change the color of its first element to red  
+  </h4>
+  
+  <h4>
+    Q2. Create a table without tbody. now use view page source  button to check whether it has tbody or not.
+  </h4>
+
+  <h4>
+    Q3. Create an elements with 3 children. now change the color of first and last to elements to given.  
+  </h4>
+
+  <h4>
+    Q4. Write a javascript code to change background of all li tags to cyan 
+  </h4>
+    <h5> 
+      Q5. which of the followings is used to look for the past ancestor that matches a given css selector 
+    </h5>
+
+
+
+    <nav>
+      <ul> 
+          <li><a href="#"> Home </a></li>
+          <li><a href="#" id="p2"> About </a></li>
+          <li><a href="#"> Contact </a></li>
+          <li><a href="#"> FAQ </a></li>
+          <li><a href="#"> Products  </a></li>
+      </ul>
+  </nav>
+
+
+</body>
+  
+   
+
+
+<script>
+  
+  //Ans1.
+  // document.getElementsByTagName("li")[0].firstElementChild.style.color = "red";
+  // document.getElementsByTagName("li")[0].firstElementChild.style.color = "cyan";
+  // document.getElementsByTagName("li").lastChild.style.color = "red";
+  // Ans2 Not
+
+  // Array.from(document.getElementsByTagName("li").forEach((element) => {
+  //   element.style.background = "red";
+  // });
+
+  //Q4
+  const elements = Array.from(document.getElementsByTagName('li'));
+  console.log(elements); // 👉️ [div.box, div.box, div.box]
+  elements.forEach(element => {
+  element.style.background = 'red';
+  });
+
+
+
+</script>
+
+
+</html>

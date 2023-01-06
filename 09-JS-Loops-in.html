@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript For loops / For In Loops / For of Loops / While Loops / Do While Loops  </title>
+</head>
+<body>
+
+    <div id="demo"> 
+                <h4> 
+                    For Loop
+                </h4>
+                <h4> 
+                For in loop (use with object ) The JavaScript for in statement can also loop over the properties of an Array:
+                </h4>
+                <h4> 
+                For of Loops (use with arrays)
+                </h4>
+                <h4> 
+                  while loops
+                </h4>
+                <h4>
+                    do while loops 
+                </h4>
+    </div>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Loops Practice")
+
+    // All Loops in JS 
+
+    // For Loop exampe
+    // for (initialization; condition; afterthought){
+    //     statement
+    // }
+
+    let sum = 0;
+    let n = prompt("Enter the value of n");
+    n = Number.parseInt(n); 
+    for(let i = 0;  i <= 5; i++) {
+        sum += (i+1);
+       // console.log(i+1 +"+");
+       // console.log(n+sum);
+    }
+
+//     let text = "";
+//     for(i = 1; i < 100; i++){
+//     text += "the value of text is " + i +"<br>";
+//    // text += "The number is " + i + "<br>";
+//    document.getElementById("demo").innerHTML = text;
+//     }
+
+// let text = "";
+// let i = 0;
+// while(i < 100){
+//     i++;
+//     text += "the number is " + i +"<br>"; 
+//     document.getElementById("demo").innerHTML = text;
+// }
+
+
+
+
+// Example of while loops 
+/*
+let text = " ";
+let b = 1;
+let i = 12;
+
+while(i>=b){
+text += "<div>" +" The number is  "+ i +" </div>";
+i--;
+document.getElementById("demo").innerHTML = text;
+}
+*/
+
+//Example of DO while loops
+/*
+let text_Value = " ";
+let a = 0;
+do{
+text_Value += "value of this variable" +" is " + a +"<br>"; 
+a++;
+document.getElementById("demo").innerHTML = text_Value;
+}
+while(a<10);
+*/
+
+//Example of for loops
+
+// let text_value = "";
+// for(let a = 0; a <= 10 ; a++){
+//     text_value += "The value of this text is " + a + "<br>";
+// }
+//     document.getElementById("demo").innerHTML = text_value;
+
+//console.log(text_value);
+
+//For loop example2
+
+//let n = prompt("Enter the value of n");
+//n = Number.parseInt(n);
+
+// let abc_Value = "";
+// for(let i = 0; i < 10; i++){
+//     abc_Value += " <div> value of this text is " + i +"</div>";
+//     document.getElementById("demo").innerHTML = abc_Value;
+// }
+
+
+    // for(let i = 1; i <= 10; i++){
+    //    // document.write (` 2 x ${i} = ${2*i} ` + "</br>");
+    //     document.write("2 X"  = "")
+
+    // }
+    
+    </script>
+    
+</body>
+</html>

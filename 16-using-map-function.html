@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Map Method  </title>
+</head>
+<body>
+
+    <div id="demo1">
+        The map() method is used for creating a new array from an existing one, applying a function to each one of the elements of the first array.
+            <br> <br> <br> <br> <br>
+        map() creates a new array from calling a function for every array element.
+        map() calls a function once for each element in an array.
+        map() does not execute the function for empty elements.
+        map() does not change the original array.
+    </div>
+
+    <div id="Syntax_of_an_Arrays">
+        array.map(function(currentValue, index, arr), thisValue)
+    </div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Using map method");
+
+
+    //  Example1
+    let arr = [2, 3, 4, 5, 6];
+    let arr1 = [];
+    for(let i = 0; i < arr.length ; i++){
+         arr1[i] = arr[i] * 3;
+    }
+    console.log(arr1);
+
+    // Example2
+    let arr2 = [2,3,4,5,6]
+    let arr3 = arr2.map(function(value){
+        return value * 3;
+    });
+    console.log(arr3); // stored in a new arrays
+
+    // Example 3
+
+    let calculator = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+    let calculatorValue = calculator.map(claculator_function);
+
+    function claculator_function(currentValue, index, array){
+       // return currentValue,index,arr ;
+       console.log(currentValue,index,array);
+    }
+
+       //Example4
+
+        
+        //Example 5
+
+        let number = [1,2,3,4,5];
+        let finalNumber = number.map((value) =>{
+                console.log(value);
+                return value + 1;
+        });
+       console.log(finalNumber)
+
+
+       // Example1
+       let arrays1 = [2,4,6,8,10];
+       let arrays2 = [];
+
+       for(let i = 0; i < arrays1.length; i++){
+        document.write("<br>")
+        document.write (arrays2[i] = arrays1[i] *2 + " ") ;
+       }
+
+       // Example2 using map method function expressions
+       let numberOfPerson = [10,12,14,16];
+       let totalNumberOfPerson = numberOfPerson.map(function(val){
+            return val*3;         
+       }); 
+       document.write("<br> <br>" + totalNumberOfPerson);
+
+       // Example3 using arrows function
+
+       let numberOfRoom = [2,3,4,5,6];
+       let totalNumberOfRoom = numberOfRoom.map((value) => value * 3);
+       document.write("<br> <br> " + totalNumberOfRoom);
+
+
+       let abc = (value) => {
+           return value * 3 ;
+       }
+       console.log(abc(4));
+      
+
+
+
+
+
+  
+    
+
+
+    </script>
+    
+</body>
+</html>

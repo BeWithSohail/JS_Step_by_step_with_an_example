@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Using Arrays with loop  </title>
+</head>
+<body>
+
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Chapter15 using loops in arrays");
+   
+    let number_Container = [2, 4, 8, 10, 12];
+    for(let i = 0; i < number_Container.length; i++){
+      //console.log(number_Container[i]);
+   //   document.write(number_Container[i] + " ");
+    }
+
+    // Array.from()
+    /* 
+       The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object.
+        change nad break object as an array
+    */
+    // Example 
+    let name = "sohail";
+    console.log(Array.from(name));
+
+    //Example 2
+
+    var districtName = "Nawada Bihar";
+    var district_Arrays = Array.from(districtName);
+    console.log(district_Arrays) ;
+
+
+    // for...of 
+    /*
+        The JavaScript for of statement loops through the values of an iterable object.
+        It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+    */
+
+    // Example 1
+    let number_chain = [23,22,39,12,33];
+
+    for (let i of number_chain){
+        console.log(i);
+    }
+
+    //Example 2
+    
+    let blank = "";
+    let valueofCars = ["BMW","SWIFT","MARUTI"]
+
+    for(let x of valueofCars){
+        console.log(valueofCars)
+    }
+
+    // For Each Loop In Javascrip
+    /*
+        The forEach() method calls a function for each element in an array.
+    */
+
+
+    // Example1 Version1
+    var brothersName = ["Sohail","Wakil","Shakil"];
+    brothersName.forEach(function(value , index){
+    document.write(index + " : " + value + " <br> ");
+    });
+
+    // Example2 Version2
+    var cityName = ["Delhi","Patna","Rajgir"];
+     cityName.forEach(abcdef);
+
+     function abcdef(nameOfcity, IndexNumber){
+        document.write (IndexNumber + " : " + nameOfcity + " <br>");
+     }
+
+     //Example 3 Version 3
+     let nameOfVillage = ["kawakol", "sokhodewra", "nawada", "gulni"];
+     let example2 = nameOfVillage.toString();
+     let example3 =  example2.toUpperCase();
+     nameOfVillage.forEach(function(nameoftext, indexnumber){
+            document.write(indexnumber + " : " +nameoftext);
+     });
+    
+
+
+    </script>
+    
+</body>
+</html>

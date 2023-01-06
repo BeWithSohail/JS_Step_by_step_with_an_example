@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Arrays Method  </title>
+</head>
+<body>
+
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Chapter14 JS Arrays Method");
+   
+    /*
+    Arrays :- Arrays are generally described as "list-like objects"; 
+    they are basically single objects that contain multiple values stored in a list.
+    Array objects can be stored in variables and dealt with in much the same way as any other type
+    of value
+    */
+
+    //const fruits = ["banana", "apple", "peach", "sdsdsd"];
+   // console.log (typeof(fruits));
+
+   // Example of toStrings() methods in Arrays
+   // toString():- The JavaScript toString() method converts an array to a string of (comma separated) array values.
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     const fruitsb = fruits.toString();
+     console.log(fruits); // Returns as an arrays
+     console.log(fruitsb); // Returns as an strings 
+
+    // Example of join() methods in Arrays
+    /* The join() method also joins all array elements into a string. It behaves just like toString()
+       but in addition you can specify the separator: but the separtors doesn't apply at the end of index.
+    */
+    const name = ["Md Sohail", "Md Wakil", "Md Shakil"];
+    const name_Separators = name.join(" Alam, ");
+    console.log(name_Separators);
+
+    // Example of pop() methods in Arrays
+    /*
+    The pop() method removes the last element from an array:
+    */
+    const positive_Integar = [2,4,6,8,10];
+    console.log(positive_Integar); // With last index number
+    const remove_Integar = positive_Integar.pop();
+    console.log(positive_Integar); // Without last index Number
+
+    // Example of push() methods in Arrays
+    // The push() method adds a new element to an array (at the end)
+    const schoolMarks = [];
+    //console.log(schoolMarks);
+    const addSchoolMarks = schoolMarks.push(2,3,4,5,6);
+    console.log(schoolMarks);
+    
+    // Example of shift() methods in Arrays
+    // The shift() method removes the first array element and "shifts" all other elements to a lower index.
+    const navigation_Menu = ["Home","About","Contact","FAQ"];
+    console.log(navigation_Menu);
+    const navigation_Menu_Removed = navigation_Menu.shift();
+    console.log(navigation_Menu_Removed); // Remove the first elements of an arrays
+
+    // Example of unshift() methods in Arrays
+    // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+    let name_And_Designation = ["Name","is","Md Sohail Alam"];
+    let add_first_letter = name_And_Designation.unshift("My"); // Strings My at the beginings
+    console.log(name_And_Designation);
+
+    /** Notes **/
+    /*
+      Array elements are accessed using their index number:
+      Array indexes start with 0:
+      [0] is the first array element
+      [1] is the second
+      [2] is the third ...
+
+    */
+
+    // Example of concat() methods in Arrays
+    // The concat() method creates a new array by merging (concatenating) existing arrays:
+    // The concat() method does not change the existing arrays. It always returns a new array.
+    // The concat() method can take any number of array arguments:
+
+    let arr1 = ["Email","Phone","PinCode","Address"];
+    let arr2 = ["sohailalam6027@gmail.com","+91-9990275154","110025","New Delhi"];
+    let arr3 = arr1.concat(arr2);
+   // let arr4 = arr3.shift();
+   //console.log(arr3);
+
+
+    // Example of splice() methods in Arrays
+    // Example1
+    // The splice() method can be used to add new items to an array:
+    const  new_Fruits_Name = ["Banana", "Orange", "Apple", "Mango"];
+    const spliceFruits = new_Fruits_Name.splice(2, 1, "Lemon", "Kiwi"); 
+    console.log(new_Fruits_Name);
+    /*
+      The first parameter (2) defines the position where new elements should be added (spliced in).
+      The second parameter (0) defines how many elements should be removed.
+      The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+      The splice() method returns an array with the deleted items:
+    */
+    // Example2
+    // The splice() method can be used to add new items to an array:
+    const  new_Fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const removed_Fruits = new_Fruits.splice(2, 1); 
+    console.log(new_Fruits);
+    /*
+      The first parameter (0) defines the position where new elements should be added (spliced in).
+      The second parameter (1) defines how many elements should be removed.
+      The rest of the parameters are omitted. No new elements will be added.
+    */
+
+
+    // JavaScript Array slice() Method 
+    /*
+      The slice() method slices out a piece of an array into a new array.
+      This example slices out a part of an array starting from array element 1 ("Orange"):
+      The slice() method can take two arguments like slice(1, 3).
+      The method then selects elements from the start argument, and up to (but not including) the end argument.
+      If the end argument is omitted, like in the first examples, the slice() method slices out the rest of the array.
+      */
+    const list_Of_Fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const citrus = list_Of_Fruits.slice(1);
+    console.log(citrus);
+
+    /*
+      All JavaScript objects have a toString() method.
+    */
+
+    // JavaScript Array sort() Method 
+    /*
+      The sort() sorts the elements of an array.
+      The sort() overwrites the original array.
+      The sort() sorts the elements as strings in alphabetical and ascending order.
+      Sorting alphabetically works well for strings ("Apple" comes before "Banana").
+      But, sorting numbers can produce incorrect results.
+
+
+    */
+
+    // Example1
+    let nameOfState = ["Patna", "Delhi", "Gujrat", "Keral", "Maharastra"];
+    let sortCitynameAlphabetically = nameOfState.sort();
+    console.log(nameOfState); // Returns in Alphabetical Orders ['Delhi', 'Gujrat', 'Keral', 'Maharastra', 'Patna']
+
+    // Example2
+
+    let indexNumber = [4, 5, 1, 3, 40];
+    let mixNumber = indexNumber.sort();
+    console.log(indexNumber); 
+    /* Note:- Sorting alphabetically works well for strings ("Apple" comes before "Banana").
+       But, sorting numbers can produce incorrect results.
+       "25" is bigger than "100", because "2" is bigger than "1".
+    */
+
+    // Example3 
+    const points = [40, 100, 1, 5, 25, 10];
+    //const pointsAlpha = points.sort();
+    points.sort(function(a, b){return a-b});
+    console.log(points);
+
+
+
+    // JavaScript Array reverse() Method 
+    /*
+        The reverse() method reverses the order of the elements in an array.
+        The reverse() method overwrites the original array.
+    */
+    // Example
+    const fruitsList = ["Banana", "Orange", "Apple", "Mango"];
+    fruitsList.reverse();
+    console.log(fruitsList); // Reverse it in opposite direction eg: Mango,Apple,Orange,Banana
+
+
+
+    </script>
+    
+</body>
+</html>

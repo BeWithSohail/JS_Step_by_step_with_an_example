@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Classes using js  </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+<body>
+<div class="abc" id="demo">  abc class </div>
+
+<button onclick="addClass()"> Add/Remove Class </button>
+</body>
+  
+<script>
+
+  // The classList property returns the CSS classnames of an element.
+  // The classList property returns a DOMTokenList.
+
+
+
+    function addClass (){
+     const list = document.getElementById("demo").classList;
+    // list.add("myStyle"); // add a mystyle class in div
+    // list.remove("abc"); // remove the class in div
+    // list.toggle("myStyle"); add/remove class on click 
+    // alert (list.contains("myStyle")); alert true or flase based on condition 
+    }
+  //console.log(list.classList)
+
+</script>
+
+
+</html>

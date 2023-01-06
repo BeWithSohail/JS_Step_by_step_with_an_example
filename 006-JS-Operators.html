@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Operators </title>
+</head>
+<body>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Practice set of Operators in js,  Airthmetic Operators, Assignment Operators, Comparison Operators, Logical Operators, Special Operators, Logical Operators")
+
+    // Airthmetic Operators Example 
+
+    // +  Addition Operators , eg: 4+2 = Returns 6
+    // -  Substraction Operatots, eg: 4-2 = Returns 2 
+    // *  Multiplication Operators, eg: 4*5 = Returns 20 
+    // /  Division Operators, eg: 20/5 = Returns 5
+    // %  Modulus Operators to get remainder in integar division, eg: 5/2 Returns 1 as an remaining 
+    // ++ Increment eg: A = 10 if we do A++ it Returns as A=11,
+    // -- Decrement eg: A =10 if do A-- IT Returns as A=9,
+
+    let a = 10;
+    let b = 5;
+
+    let example1 = 12;
+    let example2 = 9;
+
+    //var c = a++;
+    console.log("a+b = ", a+b);
+    console.log("a-b = ", a-b);
+    console.log("a*b = ", a*b);  
+    console.log("a/b = ", a/b); // here a devided by b which returns 2 as modules  
+    console.log("a%b = ", a%b); // remainder 0 
+    //console.log("a++ =", a++); // Retrurns 10 
+    //console.log(a); // Returns 11
+   // console.log(a++)
+   console.log("++a = ", ++a);// added one first value is 11
+   console.log("a++ =", a++ ); // ++ added but value will print 11 
+   console.log("--a =", --a); // -- added but value is 11 
+   console.log("a-- =", a--); // Returns 11
+   console.log("a = ", a );  // Returns a = 10
+   console.log("a-- = ", a--); // Returns a = 10
+
+   console.log(++example1 - example2++); // example1 value is = 13, example2 value is 9 // 13-9 = 4 because 8 is added prior
+   console.log(--example1 + example2--); // example1 value is = 11, example2 value is 10 // 12+10 = 22 answer    
+   console.log(example1)
+   console.log(--example1 - ++example2); // example 1 value is = 11, example2 value is 9 // 11-9 =2 
+
+
+   //Assignment Operators 
+   //=
+   //+=
+   //-=
+   //*=
+   ///=
+   //%=
+
+   let val1 = 5;
+   let val2 = 6;
+   let val3 = 7;
+   let val4 = 8;
+   let val5 = 9;
+   val1 += 5; 
+   val2 -=2; 
+   val3 *= 3;
+   val4 /= 3;
+   val5 %= 3;
+   console.log("val1 =", val1); // Returns 10 as it adds 5 more
+   console.log("val2 =", val2);  // Returns 4 as it substracts 5  
+   console.log("val3 =", val3); // Returns 2.666
+   console.log("val5 =", val5); // Returns 0 as remainder is 0
+
+    // Comparison (Relational) Operators
+    // < Less Than , eg:   5 < 2  Returns  False 
+    // > Greater Than  eg: 5 > 2  Returns True 
+    // <= Less Than or Equal to eg: Returns 5 <= 2 False 
+    // >= Greater Than Equal to   eg: 5 >= Returns True
+    // == Equal to  eg: 5==2 Returns False
+    // != Not Equal to  rg: 5!=2  Returns True
+    // === Equal value and same type  eg: 5===5 Returns True, But 5 === "5" Returns false because the types are diffrent 
+    // !== Not Equal value or Not same Type eg: 5 !== "5" Returns False because one is number and one is strings
+
+    // 
+    let ex1 = 10;
+    let ex2 = 5;
+    let ex3 = "5";
+    console.log(ex2<ex1); // Returns true
+    console.log(ex1<ex2);  // Returns false
+    console.log("ex1 > ex2 = ", ex1>ex2);     // Returns true
+    console.log("ex1 <= ex2 = ", ex1 <= ex2); // Returns false
+    console.log("ex1 >= ex2 = ", ex1>=ex2);   // Returns True
+    console.log("ex1 == ex2 = ",ex1 == ex2);  // Returns False
+    console.log("ex1 != ex2 = ", ex1!=ex2);   // Returns True
+    console.log("ex1===ex2 = ", ex1===ex2);   // Returns false 
+    console.log("ex3 === ex2 = ", ex3===ex2); // Returns False because the types are not same 
+    console.log("ex2 !== ex3 = ", ex2!==ex3); // Returns true
+
+    // Logical Operators
+
+    // "&&"" and	(x < 10 && y > 1) is true
+    // "//" or 
+    // "!"  not 
+    
+    console.log(ex1>5 && ex2 > 2 );
+   // console.log()
+    
+    </script>
+    
+</body>
+</html>

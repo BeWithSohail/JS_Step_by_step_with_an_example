@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use of Javascript walking the DOM  Element Only Navigation </title>
+</head>
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+padding: 10px 0;
+margin: 10px 30px;
+display: block;
+color: #fff;
+text-decoration: none;
+}
+
+</style>
+<body>
+    <nav>
+        <ul> 
+            <li><a href="#"> Home </a></li>
+            <li><a href="#" id="p2"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> FAQ </a></li>
+            <li><a href="#"> Products  </a></li>
+        </ul>
+    </nav>
+
+    <div class="button-group"> 
+        <button id="button1"> example1</button>
+        <button> example2</button>
+        <button> example3</button>
+        <button> example4</button>
+    </div>
+    <!-- <p id="demo"></p> -->
+
+
+    <!-- <p id="intro">Finding HTML Elements by Id</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+    <p id="demo"></p> -->
+
+    <p>Finding HTML Elements by Tag Name.</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+
+</body>
+<script>
+
+   // let query = document.querySelectorAll("button");
+    //console.log(query1)
+//    let buttonClass = document.querySelectorAll("button")
+//    buttonClass[1].style.color = "blue";
+   // document.querySelector("p").style.backgroundColor = "red";
+
+    // let  = document.getElementById("p2");
+    // .style.color = "yellow";
+    // document.getElementById("p2").style.color = "blue";
+    // let a = document.body;
+    // console.log("First child of a is : ", a.firstChild)
+    // console.log("First element child of b is: ", a.firstElementChild)
+    // console.log(document.body.childNodes[4]);
+    // //console.log(document.body.firstChild); // Returns the first child inside a body 
+    // console.log(document.body.lastChild);  // Returns the last child in a HTML Document 
+    // console.log(document.body.childNodes); // Returns the all child used inside Body
+
+    // Select Elements By ID
+
+    // myfunction = (value) =>{
+    // let a = document.getElementById("demo").innerHTML = "Hello World";
+    // }
+
+    // myfunction();
+    // let example1 = document.getElementById("intro");
+    // document.getElementById("demo").innerHTML = "The text from the intro paragraph is:" + example1.innerHTML
+
+
+    // Finding HTML Elements by Tag Name
+    //const elements = document.getElementsByTagName("p");
+    document.getElementsByTagName("p")[1].innerHTML = "Hi";
+
+</script>
+
+
+
+</html>

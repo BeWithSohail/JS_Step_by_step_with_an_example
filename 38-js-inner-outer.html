@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS inner and outer HTML </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+padding: 10px 0;
+margin: 10px 30px;
+display: block;
+color: #fff;
+text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+  <h4>
+    Javscript Inner/Outer/Tag Name/Node Name in HTML
+  </h4>
+  
+  <p id="demo"> 
+    Node name of this tag is 
+  </p>
+
+</body>
+  
+   
+
+
+<script>
+    
+    let text = document.getElementById("demo").nodeName;
+    document.getElementById("demo").innerHTML = text;
+
+</script>
+
+
+</html>

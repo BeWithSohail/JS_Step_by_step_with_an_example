@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> javascript Practice Set 4  </title>
+</head>
+<body>
+
+    <div id="demo"></div>
+
+    
+ 
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Chapter12 JS Practice set");
+
+    // Q1 => What will the following print in JS 
+    // Eg:   console.log("har\"".length);
+    // Q2 => Explore the includes, start with & end with function of a strings 
+    // Q3 => Write a programme to convert a given string into lowercase
+    // Q4 => Extract the amount out of this string. Eg:- "Please give RS 1000"
+    // Q5 => Try to change 4th character of a given string. were you able to do it ? 
+    
+
+    //1.Ans
+    console.log("har\"".length);
+
+    // 2.Ans 
+    // The includes() method returns true if a string contains a specified string.
+    // Example1
+    let name = "Md Sohail";
+    let name2 = name.includes("Alam");
+    console.log(name2); // Returns false because it doesn't include string "Alam";
+
+    //Example2
+    var home_Details = "Kawakol Sokhodewra Nawada Bihar";
+    var b = "Kawakol";
+    var c =  home_Details.includes(b) ? "yes included" : "included";
+    console.log(c); 
+
+    //3.Ans
+    let strings1 = "MD SOHAIL";
+    let strings2 = strings1.toLocaleLowerCase();
+    console.log(strings2);
+
+
+    //4. Ans
+    //Example1
+    let amount1 = "Please give RS 1000";
+    let amount2 = Number.parseInt(amount1.slice(15));
+    console.log(amount2);
+
+    //Example2
+    let amount1Example = "Please give RS 1000";
+    let amount2Exampole = amount1Example.slice("Please give RS ".length)
+    console.log(amount2Exampole);
+
+    //5. Ans
+    let char1 = "Ramesh";
+    char1[4] = "R";
+    console.log(char1); // char1 is not changed, because strings are immutable 
+
+  
+
+    </script>
+    
+</body>
+</html>

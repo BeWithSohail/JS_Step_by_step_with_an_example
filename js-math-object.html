@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Math object </title>
+</head>
+
+<style> 
+  html,body{
+      margin: 0;
+      padding: 0;
+  }
+
+  .myStyle{
+  display: none;
+  background: red;
+  }
+</style>
+
+
+
+<body>
+  <div id="demo"> </div>
+  <h3> 
+    Math.round(x)	Returns x rounded to its nearest integer <br>
+    Math.ceil(x)	Returns x rounded up to its nearest integer <br>
+    Math.floor(x)	Returns x rounded down to its nearest integer <br>
+    Math.trunc(x)	Returns the integer part of x (new in ES6) <br>
+  </h3>
+
+</body>
+
+<script>
+  // Math.round(x) returns the nearest integer:
+  let a = 3.4;
+  console.log(Math.round(a));// Return 4
+
+  //Math.ceil(x) returns the value of x rounded up to its nearest integer: 
+  let b = 4.2;
+  console.log(Math.ceil(b)); // Return 5
+
+  // Math.floor(x) returns the value of x rounded down to its nearest integer:
+  let c = 3.9;
+  console.log(Math.floor(c)); // Return 3
+
+  // Math.trunc(x) returns the integer part of x: remove the decimal part 
+  let d = 2.99;
+  console.log(Math.trunc(d)); // Return 2
+
+  // Math.sign(x) returns if x is negative, null or positive:
+  let e = -4;
+  console.log(Math.sign(e)); // Return -1
+
+  // Math.pow(x, y) returns the value of x to the power of y:
+  let f = Math.pow(2,3)
+  console.log(f);
+
+  //Math.sqrt(x) returns the square root of x:
+  let g = 64;
+  console.log(Math.sqrt(g)); // Return 8 
+
+  // Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
+  let i = Math.min(-1, 12, 10);
+  console.log(i); // Return -1
+  
+  //Math.max()
+  let j = (0, 10, 12, 14, 16, 18);
+  console.log(Math.max(j)); // Return 18 
+
+
+  // JS Math.random() 
+  // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
+
+///let randomNumber = Math.floor(Math.random() *10 + 1) ; // Return from 1 to 10
+
+function randomNumber(min,max){
+let x = Math.floor(Math.random() * (max - min)) + min;
+return x;
+};
+console.log(randomNumber(10,20));
+  
+ 
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>

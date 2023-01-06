@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> javascript String and strings method  </title>
+</head>
+<body>
+
+    <div id="demo"></div>
+
+    <div id="text_format"> 
+        Please visit Microsoft!
+    </div>
+
+    <div id="name_pairing"> 
+
+    </div>
+ 
+
+    <script type="text/javascript" lang="javascript"> 
+
+    console.log("Chapter11 JS string method")
+
+    let friend1 = "sohail";
+    let friend2 = "adil";
+
+    console.log(friend1 +" is a friend's of " +friend2);
+
+    // Escape sequence characters
+    let fruits = 'Bana\'na';
+    console.log(fruits);
+
+    let veg = "cucum\"ber";
+    console.log(veg);
+
+    // Some of the javascript string method 
+    // String length (The length property returns the length of a string:)
+    // String slice() (slice() Extracts a part of a string and returns the extracted part in a new string.)
+    // String substring() The difference is that start and end values less than 0 are treated as 0 in substring().
+    // String substr() The difference is that the second parameter specifies the length of the extracted part.
+    // String replace()  The replace() method replaces a specified value with another value in a string:
+    // String replaceAll()  The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+    // String toUpperCase() A string is converted to upper case with toUpperCase():
+    // String toLowerCase() A string is converted to lower case with toLowerCase():
+    // String concat() concat() joins two or more strings:
+    // String trim()   The trim() method removes whitespace from both sides of a string:
+    // String trimStart() The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+    // String trimEnd() The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+    // String padStart() The padStart() method pads a string with another string:
+    // String padEnd() The padEnd() method pads a string with another string:
+    // String charAt() The charAt() method returns the character at a specified index (position) in a string:
+    // String charCodeAt() The charCodeAt() method returns the unicode of the character at a specified index in a string:
+    // String split() A string can be converted to an array with the split() method:
+
+         
+    // Example of JS length property 
+    // The "length" property returns the length of a string:
+    let nameOfPerson = "sohail";
+    let personLength = nameOfPerson.length;
+    console.log(personLength);
+    // console.log(nameOfPerson[0]);
+    // console.log(nameOfPerson[1]);
+    // console.log(nameOfPerson[2]);
+    // console.log(nameOfPerson[3]);
+    // console.log(nameOfPerson[4]);
+    // console.log(nameOfPerson[5]);
+
+    // Example of JS toUpperCase() property 
+    // toUpperCase() A string is converted to upper case with toUpperCase():
+    
+    let locationTour = "delhi";
+    //console.log(locationTour);
+    document.getElementById('demo').innerHTML = locationTour.toUpperCase() +" is the capital of India";
+    
+    // Example of JS toLowerCase() property 
+    let mlaOfOkhla = "AMANTULLAH KHAN";
+   // document.write ("The MLA of okhla is " + mlaOfOkhla.toLowerCase());
+
+    // Example of slice (start, end)
+    // slice() extracts a part of a string and returns the extracted part in a new string.
+   
+    fruitsNameContainer = () =>{
+    let fruitsName = "Apple" + "<br>";
+    let sliceFruitsName = fruitsName.slice(0,5);
+    //document.write(sliceFruitsName)
+    }
+    fruitsNameContainer();
+
+    // Example of replace() methods 
+    // The replace() method replaces a specified value with another value in a string:
+
+    replace_Text = ()=>{
+        let divText = document.getElementById("text_format").innerHTML;
+        //console.log(divText)
+        let text_Value = "Google";
+        document.getElementById("text_format").innerHTML = divText.replace("Microsoft", text_Value)
+    }
+    
+    replace_Text();
+
+
+    // Example of concat() methods 
+    // String concat() joins two or more strings together
+
+    namePairing = () =>{
+        let firstName = "Md";
+        let middleName = "Sohail";
+        let lastName = "Alam";
+        let final_Name = firstName.concat(" ", middleName, " ", lastName);
+        document.getElementById("name_pairing").innerHTML = (final_Name);
+    }
+    namePairing();
+
+    // Example of trim() methods in js
+    // String trim() The trim() method removes whitespace from both sides of a string:
+    function trimtext(a,b,c){
+        let first_Text = "           text with whitepace            ";
+        let second_Text = first_Text.trim();
+        console.log(second_Text);
+
+    }
+    trimtext();
+
+    // Example of charAt
+    // String charAt() The charAt() method returns the character at a specified index (position) in a string:
+
+    // let characterPosition = "Md, Sohail Alam";
+    // let number_Of_text_at_Position = characterPosition.charAt(2);
+    // console.log(number_Of_text_at_Position)
+
+    // Quick quiz: use a for loop to print a string 
+
+    identifier = () => {    
+    let characterPosition = "Md Sohail Alam";
+    let number_Of_text = characterPosition.charAt(2);
+    console.log(number_Of_text);
+    }
+
+    </script>
+    
+</body>
+</html>

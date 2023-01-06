@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AddEventListener </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+<body>
+
+<h2> 
+  The addEventListener() method attaches an event handler to the specified element.
+</h2>
+
+<h4> 
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+</h4>
+
+<h4> 
+  You can add many event handlers to one element.
+</h4>
+
+<h4> 
+  The addEventListener() method makes it easier to control how the event reacts to bubbling.
+</h4>
+
+
+
+
+<button id="myBtn">Try it</button>
+<button id="alertbox">alert</button>
+<button id="multiple-event" style="display: block; margin-top: 30px;">Try Me</button>
+
+<p id="demo"> 
+
+</p>
+
+<p id="demo-example"> 
+
+</p>
+
+<div id="p1">  
+  <button id="c1" onclick="event.stopPropagation()">I am child</button>  
+</div>  
+
+</body>
+
+<script>
+
+// Example 1
+
+document.getElementById("myBtn").addEventListener("click",displayDate);
+function displayDate(){
+  document.getElementById("demo").innerHTML = Date();
+}
+
+// Example2
+let b = document.getElementById("alertbox");
+let x = function(){
+  alert("my name is md sohail alam");
+}
+b.addEventListener("click",x);
+
+//Example Multiple event handlers 
+let multipleEvents = document.getElementById("multiple-event");
+multipleEvents.addEventListener("click", myfunction3);
+multipleEvents.addEventListener("mouseover", myfunction1);
+multipleEvents.addEventListener("mouseout", myfunction2);
+
+function myfunction1(){
+document.getElementById("demo-example").innerHTML += "mouse over! <br>"; 
+}
+function myfunction2(){
+  document.getElementById("demo-example").innerHTML += "mouse out! <br>";  
+}
+function myfunction3(){
+  document.getElementById("demo-example").innerHTML += "clicked <br>";  
+}
+
+//Example 4 resize function
+
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = Math.random();
+});
+
+// Example 5 Bubbling and capturing in js 
+  var parent = document.querySelector('#p1');  
+  parent.addEventListener('click', function(){  
+  console.log("Parent is invoked");  
+  });  
+  var child = document.querySelector('#c1');  
+  child.addEventListener('click', function(){  
+  console.log("Child is invoked");  
+  });  
+
+</script>
+
+
+</html>

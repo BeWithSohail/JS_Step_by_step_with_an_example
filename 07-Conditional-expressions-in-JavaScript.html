@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conditional expressions in JavaScript </title>
+</head>
+<body>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("07.Conditional expressions in JavaScript")
+
+    // 07.Conditional expressions in JavaScript Example 
+
+    //The if statement can have an optional else clause The syntax looks something like this 
+    /*   if(condtion){
+            //Block of code if condition is true!
+        }
+        else(
+            // Block of code if condition is false!
+        )
+    */
+    let a = prompt("Hey what is your age ?")
+    //a = Number.parseInt(a); // Converting the strings to a number
+    console.log(typeof a); 
+    if(a<0){
+        alert("you are a kid");
+    }
+    else if (a<18){
+        alert("you are not 18 ")
+    }
+    else{
+        alert("You are enough mature to drive");
+    }
+
+    console.log("Done");
+    console.log("You can",(a>18)? "Drive" : "Not Drive");
+    
+    
+
+    </script>
+    
+</body>
+</html>

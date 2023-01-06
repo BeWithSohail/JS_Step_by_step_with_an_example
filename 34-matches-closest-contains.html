@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Matches,Closest,Contains JavaScript </title>
+</head>
+
+<style> 
+.container, .demo {
+  background-color: tomato;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+}
+</style>
+
+
+<body>
+
+    <div class="main-parent"> 
+    <div class="demo"> Grandparent
+        <div class="demo container">Parent
+          <div id="myElement" class="demo">child 
+            <div id="subchild"> 
+                <div id="grandchild">  </div>
+
+                SubChild
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+  
+
+<script>
+
+        // closest method The closest() method searches up the DOM tree for elements which matches a specified CSS selector.
+        // The closest() method starts at the element itself, then the anchestors (parent, grandparent, ...) until a match is found.
+        // The closest() method returns null() if no match is found.
+
+        const element = document.getElementById("myElement");
+        const element2 = document.getElementById("grandchild");
+        //const closest = element.closest(".main-parent"); 
+       // console.log(element.closest(".subchild")); // Return Null
+       console.log(element.contains(grandchild));// doesn't take any strings // Returns true
+
+
+
+</script>
+
+
+</html>

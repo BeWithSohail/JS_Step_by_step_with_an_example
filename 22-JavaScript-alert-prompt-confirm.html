@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use of Javascript alert,prompt,confirm   </title>
+</head>
+<body>
+
+
+        <div id="answer1" ></div>
+            
+
+        <script>    
+        alert("Enter the value of input");
+        let input = prompt("Enter the value of input here");
+        input = Number.parseInt(input);
+        let confirmNumber = confirm("Do you really want to print it ?");
+        if (confirmNumber){
+            document.getElementById("answer1").innerHTML = "The value of input is " + input; 
+        }
+        else{
+            document.getElementById("answer1").innerHTML = "Please Confirm the value first"; 
+        }
+
+        //alert(typeof (input));
+
+        </script>
+
+
+</body>
+</html>

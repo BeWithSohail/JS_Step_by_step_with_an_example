@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> setTimeout and setTimeinterval  </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+<body>
+
+  <div id="demo"> 
+
+  </div>
+<button onclick="setTimeout(sum, 3000, 2,3)"> click me to show </button>
+
+</body>
+  
+
+<script>
+
+  // setTimeout
+  // clearTimeout
+  //Example1
+  // document.write("we are looking into setTimeout and setTimeinterval")
+  //  let a =  setTimeout(function(){
+  //     alert("I am inside setTimeout function.")
+  //  }, 5000);
+
+  //  let b = prompt("Do you want to run setTimeout function?");
+  //  if("No" == b){
+  //     clearTimeout(a);
+  //  }
+
+   //Example1
+  const sum = (a,b) =>{
+      document.getElementById("demo").innerHTML = (a+b);
+  };
+  
+
+</script>
+
+
+</html>

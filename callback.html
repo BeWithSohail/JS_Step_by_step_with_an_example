@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript CallBack </title>
+</head>
+
+
+
+
+
+<body>
+  <div id="demo"> </div>
+  <h2> 
+    JavaScript callback function 
+  </h2>
+
+  <h3> 
+  </h3>
+
+</body>
+
+
+<script>
+
+  // callback example1
+  // function sayHi(){
+  //     console.log("Hi")
+  // }
+  // function SayBye(){
+  //   console.log("Bye !")
+  // }
+  // function sayHello(num1, num2, callback1, callback2){
+  //   console.log(num1 + num2);
+  //   callback1();
+  //   callback2();
+  // }
+  // sayHello(2,3,sayHi,SayBye);
+
+  // Callback example2
+    // function greeting(name) {
+    //    alert("Hello " + name );
+    // }
+
+    // function processUserInput(callback) {
+    // const name = prompt("Please enter your name.");
+    // callback(name);
+    // }
+
+    // processUserInput(greeting);
+
+    //callback example3 
+    // function greetingName(name){
+    //   alert("Hello" + name);
+    // }
+    // function userInput(callback){
+    //     let name = prompt("Enter your Name");
+    //     callback(name);
+    // }
+
+    // userInput(greetingName);
+
+
+    // Example4 
+    function cretescript(callback){
+        let script = document.createElement("script");
+        script.src = "https://www.w3schools.com/lib/common-deps.js?v=1.0.0";
+        document.body.appendChild(script);
+        script.onload = function(){
+          console.log("Loaded script with src is " + script.src)
+        };
+        callback();
+    }
+
+    function sayHello(){
+        console.log("Hello !")
+    }
+
+    cretescript(sayHello);
+
+</script>
+
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tell me a joke  </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+padding: 10px 0;
+margin: 10px 30px;
+display: block;
+color: #fff;
+text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+  <h4>
+    Q1. Create a Random joke from given array ?
+  </h4>
+  
+
+
+</body>
+  
+   
+
+
+<script>
+
+var items = [254, 45, 212, 365, 2543];
+console.log(random_item(items));
+function random_item(items)
+{
+return items[Math.floor(Math.random()*items.length-1)];    
+}
+
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Map Method  </title>
+</head>
+<body>
+
+    <div id="demo1">
+         <h2> 
+            The reduce() method executes a reducer function for array element.
+        </h2>
+          <br> 
+
+        <p>
+            The reduce() method returns a single value: the function's accumulated result.
+        </p>
+        <p> 
+            The reduce() method does not execute the function for empty array elements.
+        </p>
+        <p>
+            The reduce() method does not change the original array.
+        </p>
+        
+        </div>
+
+    <div id="Syntax_of_an_Arrays">
+        array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+    </div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("JavaScript Array reduce Function");
+
+    // Example1
+    let arr = [5,10,15,20];
+    document.getElementById("demo3").innerHTML = arr.reduce((a,b) => a-b);
+
+    //Example2
+    let arr2 = [10,12,13,14]
+    let arr3 = arr2.reduce(function (a,b){
+        return a+b;
+    });
+    console.log(arr3)
+
+    // Example3
+
+    let abc = [2,4,6,8];
+    let function_number = (a1, a2) =>{
+        return a1+a2;
+    } 
+
+    let finalresult = abc.reduce(function_number);
+    console.log(finalresult);
+
+    // Example4
+
+    let step1 = [1,2,3,4,5];
+    let step2 = step1.reduce(function1(a,b,c,d));
+    console.log(step2)
+
+    let arrNum = [15, 39, 20, 32, 30, 45, 22]
+    arr.reduce((a1, a2) => { 
+    return a1 + a2
+    });
+
+    // map() :-    This property is what makes the map() method different from the ‘forEach()’ method. The map() method makes a new array whereas the ‘forEach()’ method mutates/changes the original array with the calculated array.
+    // filter() :- The name kind of gives it away, doesn't it? You use this method to filter the array based on conditions you provide. The filter() method also creates a new array.
+    // reduce() :- The reduce() method reduces an array to a single value by performing the desired operation on the elements collectively.
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

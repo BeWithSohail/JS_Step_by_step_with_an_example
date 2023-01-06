@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Map Method  </title>
+</head>
+<body>
+
+    <div id="demo1">
+         <h2> 
+             The filter() method creates a new array filled with elements that pass a test provided by a function.
+         </h2>
+          <br> 
+
+        <p>
+              The filter() method does not execute the function for empty elements.
+        </p>
+        <p> 
+            The filter() method does not change the original array.
+        </p>
+        
+        </div>
+
+    <div id="Syntax_of_an_Arrays">
+        array.filter(function(currentValue, index, arr), thisValue)
+    </div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Using Filter Function in JavaScript");
+
+    // Example1
+    let array1 = [2,4,6,8,10,12,14,16,18,20];
+    //let array2 = array1.filter(value => value >= 8); // Using Arrow Function
+   
+    // Using Annonymous Function
+    let array2 = array1.filter(function(value){
+       return  value >= 8
+    });
+
+   // console.log(array1);
+    console.log(array2);
+
+    // OutPut ==> [8,10,12,14,16,18,20]
+
+    // Example 2 using with object inside an arrays
+
+    let team = [
+        {
+            name:"Sohail",
+            profile: "UI Developer"
+        },
+        {
+            name : "Wakil",
+            profile: "UI Designer"
+        },
+        {
+            name:"sdil",
+            profile: "UI Designer"
+        },
+        {
+            name : "Wasim",
+            profile: "UI Developer"
+        }  
+    ]
+
+    let UIdeveloper = team.filter(val => val.profile == "UI Developer");
+    console.log(UIdeveloper);
+   
+    </script>
+    
+</body>
+</html>

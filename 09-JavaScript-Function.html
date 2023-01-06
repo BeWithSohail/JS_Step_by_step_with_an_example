@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 09.JavaScript Function </title>
+</head>
+<body>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("09.JavaScript Function")
+
+        //Function parameters are listed inside the parentheses () in the function definition.
+        //Function arguments are the values received by the function when it is invoked.
+        // Inside the function, the arguments (the parameters) behave as local variables.
+        // function name(parameter1, parameter2, parameter3) {
+        // code to be executed
+        // }
+
+
+        // Example:-1
+        function cookMaggie (maggie, paani, tapeli){
+                console.log("your maggie will be ready in "
+                + maggie *2
+                + " Minute "
+                + " and ingredients used are:- "
+                + maggie + " maggie "
+                + paani +" cup of water "
+                + " using " +tapeli +" pan "
+                );
+        }
+        cookMaggie(2,4,1);
+
+        // Example:-2
+        let a = 2;
+        let b = 4;
+        let c = 6;
+
+        function averageof(x,y){
+            return x * y;
+            console.log("Done");
+        }
+
+        console.log("The avergae of 1+ is ", averageof(a,b));
+        console.log("The avergae of 1+ is ", averageof(b,c));
+        console.log("The avergae of 1+ is ", averageof(c,a));
+       
+
+    // Example:-3
+    // let bread1 = prompt("which bread would you like to have ?");
+    // let veggies1 = prompt("which veggies would you like to have ?");
+    // let sauce1 = prompt("which should you like to have ?");
+
+    // function makeSandwitch(bread, veggies, sauce){
+    //     let sandwitch = bread + " Bread" + veggies + "Veggies" + sauce + "sauce" + "sandwitch is ready";
+    //     return sandwitch;
+    // }
+
+    // let vegSandwitch = makeSandwitch(bread1,veggies1,sauce1);
+    // console.log(vegSandwitch);
+
+    // let age = prompt("what is your age ?");
+
+    // function ageNumber(){
+    //     let totalAge = "Total age is " + age;
+    //     return totalAge;      
+    // }
+    // console.log(ageNumber());
+
+    // Example:-4
+    // let name = prompt("what is your name ?");
+    // let qualification = prompt ("What is your qualification ?");
+    // let classIn = prompt("in which class are you in ?");
+
+    // function studentDetails(x,y,z){
+    //     let studentBiodata = "My name is " + x +"<br>"+ "My Qualification is " +y +"<br>" +"I am in class " + classIn;
+    //     return studentBiodata;
+    // }
+
+    // let totalStudentDetails = studentDetails(name,qualification,classIn);
+    // document.write(totalStudentDetails);
+    
+
+    // Example:- 5
+    // Arrow Function
+    // Before Arrow function WE USED FUNCTION LIKED THIS
+    /* hello = function() {
+        return "Hello World!";
+        }
+    */
+
+    /*
+    hello = () =>{
+        return "Hello World"
+    }
+    console.log( hello());
+    */
+
+   // let myFunction = (a, b) => a * b;
+
+    // myfunction = (x,y) =>{
+    //     return x*y;
+    // }
+    // console.log(myfunction(4,5));
+
+    // let skills = prompt ("What is your skills set ?");
+    
+    // skillSet = () =>{
+    //   let finalSkillsSet = "My skills are " + skills;
+    //     return finalSkillsSet;
+    // }
+
+    // document.write(skillSet());
+
+    // Example 6
+    // function greetingMessages(name,name2){
+    //     let message = ("It's your special " + name2+ " day get out there and celebrate!” “Wishing you the biggest slice of happy today.” “I hope your celebration gives you many happy memories!” “Our age is merely the number of years the world has been enjoying us!” “Enjoy your special day.");
+    //     return message;
+    // }
+    // let name = "Sohail";
+    // let name2 = "Wakil";
+    // let store = greetingMessages(name, "sohail");
+    // console.log(store);
+
+    // let name = "Sohail";
+    // let name2 = "Wakil";
+
+    // greetingMessage = (x, y) =>{
+    //     let storeValue = ("It's your special " +x+ " day get out there " + y + " and celebrate!” “Wishing you the biggest slice of happy today.” “I hope your celebration gives you many happy memories!” “Our age is merely the number of years the world has been enjoying us!” “Enjoy your special day.");
+    //     return storeValue;
+    // }
+
+    // let storableData = greetingMessage(name,name2);
+    // document.write(storableData);
+
+
+    // Example 7 Using Object
+    // const objectGuide = {
+    //     Name : "Md Sohail",
+    //     Address: "New Delhi",
+    //     game : function abc(){
+    //         return "GTA" ;
+    //     }
+    // } 
+    // console.log(objectGuide.game());
+
+    // JAVASCRIPT SCOPE 
+
+    /*
+    JavaScript has 3 types of scope:
+        Block scope   ==> (ES6 introduced two important new JavaScript keywords: let and const.
+        These two keywords provide Block Scope in JavaScript.)
+        Function scope ==> (Variables declared within a JavaScript function, become LOCAL to the function.)
+        Local variables have Function Scope:They can only be accessed from within the function.
+        Global scope   ==> 
+    */
+
+
+    //  Example of Block scope Code in place of let if we use var this will work because var is a global scope variable
+    function block_Scope_Variable(){
+        let a = "Block scope variable";
+        console.log(a);
+    }
+    
+    block_Scope_Variable();
+
+    // Example of Function Scope
+    // Note: Variables declared with var, let and const are quite similar when declared inside a function.
+    function local_Scope_Variable(){
+        var age = 35;
+        console.log(age);
+    } 
+    local_Scope_Variable();
+   
+
+    //Global Scope Variable as we we are using "var" keyword.
+    {
+        var uniqueNumber = 355;
+    }
+    // Variable defined using var keyword can be accessed outside of block scope because Variables declared with the var keyword can NOT have block scope.
+    // if we use let,const in place of var keyword it will not be accessed out side of 
+    console.log(uniqueNumber);
+    
+    
+    // Global JavaScript Variables
+        let carName = "Volvo";
+        // code here can use carName
+        function myFunction() {
+        // code here can also use carName
+        }
+
+
+        // Types of Function In JavaScript 
+        /*
+        There are 3 ways of writing a function in JavaScript:
+        Function Declaration
+        Function Expression
+        Arrow Function
+        */
+
+        // Example of Function Declaration 
+        function add (a,b){
+                return a+b;      
+        }
+        console.log(add(2, 4));
+
+        // Example of Function Expression also called as a Annonymous Function
+        //Example 1
+
+        let substract = function(d,e){
+            return d - e ;
+        }
+        console.log(substract(5,4))
+        
+        //Example2
+        setTimeout(function (){
+            console.log("Hello And welcome to annonymous Function");
+        },3000)
+
+        // Example of Arrow Function 
+        let multiplication = (f,g) =>{ return f * g};
+        console.log(multiplication(2,4));     
+        
+    </script>
+    
+</body>
+</html>

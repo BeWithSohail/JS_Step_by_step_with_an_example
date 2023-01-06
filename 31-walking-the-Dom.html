@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use of Javascript walking the DOM </title>
+</head>
+<body><h1>
+        When a web page is loaded, the browser creates a Document Object Model of the page.
+        The HTML DOM model is constructed as a tree of Objects:
+    </h1>
+    <span></span>
+    <h1> 
+        With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+    </h1>
+    <ul> 
+        <li> 
+            JavaScript can change all the HTML elements in the page
+        </li>
+        <li>
+            JavaScript can change all the HTML attributes in the page   
+       </li>
+        <li>
+            JavaScript can change all the CSS styles in the page
+        </li>
+        <li>
+            JavaScript can remove existing HTML elements and attributes
+        </li>
+        <li>
+            JavaScript can add new HTML elements and attributes
+        </li>
+        <li>
+            JavaScript can react to all existing HTML events in the page
+        </li>
+        <li>
+            JavaScript can create new HTML events in the page 
+        </li>
+    </ul>
+
+    <div class="parent"> 
+        <div class="child"> 
+            <div class="sub-child">
+                <a href="#"> My Name is Md Sohail Alam </a>
+                <p id="demo"> 
+
+                </p>
+                <h2 class="heading-first"> 
+
+                </h2>
+                 
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    console.log(document.body.childNodes[4]);
+    //console.log(document.body.firstChild); // Returns the first child inside a body 
+    console.log(document.body.lastChild);  // Returns the last child in a HTML Document 
+    console.log(document.body.childNodes); // Returns the all child used inside Body
+</script>
+
+
+
+</html>

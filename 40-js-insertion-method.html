@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Insertion Method create/append/prepend/before/after/replacewith </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li a{
+  padding: 10px 0;
+  margin: 10px 30px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.democlass{
+  color: red;
+}
+
+</style>
+
+
+<body>
+
+  <div id="abc"> 
+      <div class="child"> remove it  </div>
+  </div>
+
+ <button onclick="testfunction()"> 
+    Move
+ </button>
+
+
+</body>
+  
+<script>
+
+    // JS Example of create/append/prepend/before/after/replacewith method
+    //let createElements = document.createElement("div");
+    //let selectElements = document.getElementById("parent");
+    //selectElements.appendChild(createElements).innerHTML = "Hello Text";
+     //let final = selectElements.prepend(createElements);
+    // final.innerHTML = "DKJFHDJKF"
+   // final.innerinnerHTML = "Hello Text";
+    // JS Example of prepend method
+    
+
+    //insertAjacentHTML (beforebegin,beforeend,afterbegin,afterend)
+
+    function testfunction(){
+      // let span = document.getElementById("mySpan");
+      // let h2 = document.getElementById("myH2");
+      // h2.insertAdjacentElement("afterend",span);
+      let value1 = document.getElementById("abc");
+      // value1.insertAdjacentHTML("beforebegin", '<div class="test"> beforebegin </div>')
+      //  value1.insertAdjacentHTML("beforeend", '<div class="test"> beforeend </div>')
+      // value1.insertAdjacentHTML("afterbegin", '<div class="test"> afterbegin </div>')
+      // value1.insertAdjacentHTML("afterend", '<div class="test"> afterend </div>')
+      //console.log(value1);
+     value1.remove();
+    }
+
+</script>
+
+
+</html>

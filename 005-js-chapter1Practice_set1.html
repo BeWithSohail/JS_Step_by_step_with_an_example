@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice Set1 </title>
+</head>
+<body>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Practice set of var,const,let,Primitive Data Type, Object")
+    // Questions are
+
+    // Q1. Create a variable of type strings and try to add a number to it ?
+    // Q2. Use type of operators to find the datatype of the string in last questions ?
+    // Q3. Create a Const Object in JS, can you change it to hold a number later ?
+    // Q4. Try to add a new key to the const object in  Q3 were you able to do it ?
+    // Q5. Write a JS Program to create a word meaning dictionary of 3 words
+
+    // 1.Ans
+    let value1 = "Sohail";
+    let value2 = 6027;
+    let value3 = (value1+value2);
+    console.log(value3); //output will be something like this "Sohail6027"
+
+    // 2.Ans
+    console.log(typeof value3); // It returns strings and why we will see later.
+
+    //3. Ans 
+    const keyPair_value = {
+        Name : "Sohail",
+        Age : 26,
+        role : "UI Developer",
+    }
+
+   // const keyPair_value = 33; // As we know that neither we can redeclared nor change the value of const so this code will throw an error
+    console.log(keyPair_value);
+
+    // But if we use let then the result will be change
+    let example_Value = {
+        Name : "Shadab",
+        Age : 28,
+        role : "UX Designer"
+    }
+    example_Value = 33;
+    console.log(example_Value);
+
+    //4. Ans 
+    const details_Value = {
+        name:"Md Wakil Alam",
+        Age: 30,
+        Job: "Salesman"
+    }
+    details_Value["name"] = "Md Wakil2"
+    details_Value["Age"] = 35;
+
+    console.log(details_Value)
+
+    //5 Ans
+
+    const dictionary = {
+        sun : "The sun rises in the east and sets in the west.",
+        moon : "the round object that moves in the sky around the earth and can be seen at night:",
+        earth: "It was Ptolemy who propounded the theory that the earth was at the centre of the universe."
+    }
+    console.log(dictionary);
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Object and object method </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+
+<body>
+  <h3> 
+   Javascript  Object 
+  </h3>
+
+  <div id="demo"> </div>
+  <div id="demo2"> </div>
+
+</body>
+
+
+
+<script>
+
+  let person2 = {
+    Name : "Adil",
+    Address : "Kawakol",
+    DOB : 15/07/1995
+  }
+  let person = {
+    Name : "Sohail",
+    Age : 25
+  }
+  person.lastName = "Alam";
+  person.Name = "Wakil"
+ //console.log(person);
+// console.log("Name" in person); // check either defined value exist or not in object 
+
+// Use of for in loop to access all the object in object 
+
+  for(let key in person){
+      document.write(key + " " + person[key] + "<br><br> " );
+  }
+  // JS method 
+  let place = {
+    Location : "Gurugram",
+    Time : "Morning",
+    City : "Delhi"
+  }
+
+  let text = "";
+  for(let key in place){
+    text +=  key + " " + place[key] + " ";
+  }
+  document.getElementById("demo").innerHTML = text;
+
+  // JS Object method 
+  const aadhar_Details = {
+    Md_Sohail : 12345,
+    Md_Wakil : 567890,
+    Md_Adil : 989076,
+    final_Adhar_details : function(){
+      return this.Md_Sohail + " " + this.Md_Wakil + " " + this.Md_Adil;
+    }
+  }
+
+  // Display Data from the object 
+ // document.getElementById("demo2").innerHTML = aadhar_Details.final_Adhar_details();
+ console.log(aadhar_Details.final_Adhar_details())
+
+</script>
+
+
+</html>

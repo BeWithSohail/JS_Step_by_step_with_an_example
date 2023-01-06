@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parameters and Arguments in JavaScript  </title>
+</head>
+<body>
+
+    <div id="demo1">
+            <h2 style="text-align:center; margin-top: 25px;"> 
+                Parameters and Arguments in JavaScript
+            </h2>
+    </div>
+
+    <div id="demo2"> 
+
+    </div>
+    
+    <script type="text/javascript" lang="javascript"> 
+    console.log("Parameters and Arguments in JavaScript");
+
+    function MultiplyTable (number) /* Called as a parameter */ {
+        for(let i = 1; i <= 10; i++){
+            //document.write("Hello Sohail" + "<br>");
+            document.write(` ${number} x ${i} = ${number * i}`);
+            document.write(`<br>`);
+        }
+    }
+    MultiplyTable (5);
+
+    document.write ('<br>');
+    document.write ('<br>');
+    MultiplyTable (2);
+
+    document.write ('<br>');
+    document.write ('<br>');
+    MultiplyTable (1); /* Called as a arguments */
+
+    function addNumber (value1, value2){
+        document.write(value1 + value2);
+    }
+    addNumber(2, 5);
+
+    </script>
+    
+</body>
+</html>

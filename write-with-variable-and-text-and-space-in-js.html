@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> How to write text in js and give space and also using with variables </title>
+</head>
+<body>
+
+    
+
+    <p id="demo"></p>
+
+    <script>
+    // we will learn how to use text in js 
+    // How to use text with variable 
+    // How to put space between text 
+
+    const  biodata_Name = {
+        Name: "Md Sohail Alam",
+        DOB: 15,
+        Month: "July",
+        Year:"1995",
+        State: "Bihar",
+        Dist: "Nawada",
+        Designation: "UI Developer"
+    }
+    document.getElementById("demo").innerHTML = 
+    "Hi" +" "+ "Everyone" +" "+ "I" + " "+ "Hope" +" "+ "you are doing well." +" "+ "Please find my details Below" +"<br>"+
+    "My name is " + biodata_Name.Name+ " <br> "+ "I am";
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chapter8 Practice Set </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+
+<body>
+  <h3> 
+    Q1. Write a programm to show diffrent alerts when diffrent buttons are clicked.
+  </h3>
+  <h3> 
+    Q2. Create a website which is capable of storing bookmarks of your favourite website using href
+  </h3>
+  <h3> 
+    Q3. Repeat Q1 using event listener 
+  </h3>
+  <h3> 
+    Q4. Write a JS programm to keep fetching contents of a website (every 5 seconds )
+  </h3>
+  <h3> 
+    Q5. Creae a glowing bulb effects using classlist toggle in javascript
+  </h3>
+
+  <!-- Q1 -->
+      <button type="button" onclick="alert('This is alert1')"> Alert1</button>
+      <button type="button" onclick="alert('This is alert2')"> Alert2</button>
+      <button type="button" onclick="alert('This is alert3')"> Alert3</button>
+      <button type="button" onclick="alert('This is alert4')"> Alert4</button>
+  <!-- End -->
+
+  <!-- Q2 -->
+  <button id="facebook"> Facebook </button>
+  <!-- End -->
+
+
+  <!-- Q5 -->
+  <div class ="container"> 
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" class="offBulb" style="width:100px">
+  </div>
+  <!-- End -->
+
+</body>
+
+<script>
+
+
+// Answer 2
+    document.getElementById("facebook").addEventListener("click", function(){
+      let url = "https://facebook.com";
+      window.location = url;
+    });
+// Answer 3
+// Answer 4
+
+// Answer 5
+function myfunction(){
+    var img = document.getElementById('myImage').src;
+      if   (img.indexOf('https://www.w3schools.com/js/pic_bulboff.gif')!=-1) {
+        document.getElementById('myImage').src  = 'https://www.w3schools.com/js/pic_bulbon.gif';
+      }
+      else {
+        document.getElementById('myImage').src = 'https://www.w3schools.com/js/pic_bulboff.gif';
+      }
+    }
+
+setInterval(myfunction, 100);
+</script>
+
+
+</html>
