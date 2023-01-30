@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Hoisting </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+
+<body>
+  <h3> 
+    JavaScript Hoisting
+  </h3>
+</body>
+
+
+
+<script>
+
+ // Hoisting Javascript 
+
+ 
+ sayHello();
+
+ function sayHello(){
+   console.log("Hello")
+ }
+
+ var x; // Declaration
+ x=7; //Assignment
+ console.log(x);// Call
+
+ // Using hoisting with var keywords 
+ console.log(y);
+ var y = 7; // it result as a undefined bcoz it is declaring the value in one step 
+ // var y; Step 1
+ // y = 7;
+ console.log(number)
+// undefined
+var number = 10
+console.log(number)
+// 10
+
+// Using hoisting with let keywords 
+// console.log(z);
+// let z = 10; //Result ReferenceError: Cannot access 'z' before initialization
+
+// Using hoisting with const keywords 
+// console.log(d);
+// const d = 12; //Result ReferenceError: Cannot access 'd' before initialization
+
+
+// Use of strict mode 
+
+// "use strict";
+// console.log(e);
+// e = 3.14; 
+
+
+
+
+// {
+//   let a = 5;
+// }
+
+// console.log(a)
+
+
+
+</script>
+
+
+</html>

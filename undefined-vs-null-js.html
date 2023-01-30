@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Undefined vs null </title>
+</head>
+
+<body>
+  <div id="demo"> </div>
+  <h2> 
+    JavaScript Promises 
+  </h2>
+
+  <h3> 
+  </h3>
+
+</body>
+
+
+<script>
+//   let myPromise = new Promise(function(myResolve, myReject) {
+//   // "Producing Code" (May take some time)
+//   console.log("I am Pending")
+//   myResolve(); // when successful
+//   console.log("I am done")
+// });
+
+// let yourPromise = new Promise(function (resolve, reject){
+//   console.log("pending");
+//   reject(new Error("I am an error"));
+//   console.log("passed")
+// });
+//console.log(yourPromise);
+
+
+//let boolean_value = true;
+function myFunction(complete){
+  return new Promise(function(resolve, reject){
+    console.log("Fetching data, Please wait...")
+    setTimeout(function(){
+      if(complete){
+        resolve("I am success");
+      }
+      else{
+        reject("I am failed")
+      }
+    },3000)
+  })
+}
+
+let onfullfillment = (result) =>{
+console.log(result);
+}
+let onRejection = (error) => {
+  console.log(error);
+}
+
+myFunction(false).then(onfullfillment).catch(onRejection);
+
+
+// console.log(myFunction(false));
+
+
+
+</script>
+
+
+</html>

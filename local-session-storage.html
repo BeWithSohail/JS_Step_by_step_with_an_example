@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> localStorage vs session storage in HTML   </title>
+</head>
+<body>
+
+ 
+  
+
+
+
+<script>
+
+// Some of the method for local storage 
+//localStorage.setItem()
+//localStorage.getItem()
+//localStorage.clear()
+//localStorage.removeItem()
+// localStorage.setItem('name', 'John');
+// localStorage.setItem('Location', 'Kawakol')
+
+// localStorage.removeItem('Location')
+
+let a = prompt("Enter key you want to set");
+let b = prompt("Enter value you want to set");
+
+let stored_data = localStorage.setItem(a,b);
+console.log(`The value of ${a} is ${localStorage.getItem(a)}`);
+
+
+
+</script>
+
+
+</html>

@@ -32,6 +32,8 @@ console.log(text2);
 // Variable Substitutions
 var templateLiterals = "template literals";
 document.write(`This is the example of ${templateLiterals}`);
+
+
  
 
 

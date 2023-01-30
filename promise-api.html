@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Promises </title>
+</head>
+
+<body>
+  <div id="demo"> </div>
+  <h2> 
+    JavaScript Promises 
+  </h2>
+
+  <h3> 
+  </h3>
+
+</body>
+
+
+<script>
+
+let p1 = new Promise(function(resolve,reject){
+  setTimeout(()=>{
+    resolve("Value 1");
+  })
+},3000);
+
+// let p2 = new Promise(function(resolve, reject){
+// setTimeout(function(){
+//   resolve("Value 2")
+// }, 4000)
+// });
+
+// let p3 = new Promise(function(resolve,reject){
+// setTimeout(()=>{
+//   resolve()
+// })
+// });
+
+// p1.then(function(value){
+//   console.log(value);
+// }).catch(function(error){
+//   console.log(error)
+// })
+
+</script>
+
+
+</html>

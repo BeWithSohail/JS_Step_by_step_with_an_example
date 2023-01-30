@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Closure </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+
+<body>
+  <h3> 
+    JavaScript Closure
+  </h3>
+</body>
+
+
+
+<script>
+
+  // Example of lexical scope 1
+  // var a = 10;
+  function helloName(){
+    var a = 10;
+    console.log(a); // This will print 10
+  }
+  //console.log(a);// This will print a reference error 
+  helloName();
+
+
+  // Example of lexical scope 2
+
+  function outer(){
+    let b = 100;
+    return function inner(){
+      // console.log(b)
+      return b;
+    }
+    // inner();
+  }
+
+  let abc = outer();
+  console.log(abc()); // This will print
+
+</script>
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Arrow Function </title>
+</head>
+<body>
+
+    <script type="text/javascript" lang="javascript"> 
+    console.log("JavaScript Arrow Function")
+
+    // Example1 Arrow Function 
+    let sum = (a,b) =>{
+        return a+b;
+    }
+    console.log(sum(2,3))
+
+    // Example2 Arrow Function using arrow function in one line 
+    let sumNumber = a => 5*a;
+    // Using setTimeout with arrow function 
+    setTimeout(()=>{
+        console.log(sumNumber(2))
+    },2000);
+   
+    // Example 3 creating random Number using Arrow function 
+
+    let randomNumber = ()=> Math.random();
+    console.log(randomNumber());
+
+    // Using arrow function with addEvent litsner
+
+    // document.addEventListener("click", function(){
+    //     console.log("clicked")
+    // });
+
+    document.addEventListener("click",() => console.log("clicked"));
+
+    let abc = number => console.log(number);
+    abc(10);
+
+    // arrow function in single line 
+    let sayHello = (name) => console.log("hello "+ name); // But Not Recommended
+    console.log(sayHello("Harry"));
+
+    //using arrow function with an object 
+
+    const details = {
+        name:"sohail",
+        lastName: "alam",
+        role:"JS Developer",
+        exp:30,
+        show:()=>{
+          //  console.log(`Hi Everyone My Name is Md ${this.name} ${this.lastName} and I am a ${this.role} and I have total ${this.exp} Years of Experiences.`)
+            setTimeout(()=>{
+                console.log(`Hi Everyone My Name is Md ${this.name} ${this.lastName} and I am a ${this.role} and I have total ${this.exp} Years of Experiences.`)
+            },3000)
+        }
+    }
+
+    details.show();
+    
+    
+
+    // Using arrow function in one line
+
+    
+    </script>
+    
+</body>
+</html>

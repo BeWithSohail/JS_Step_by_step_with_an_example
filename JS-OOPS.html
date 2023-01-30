@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS OOPS  </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+<body>
+
+<h2> 
+A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+</h2>
+<h3> 
+To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:
+</h3>
+
+
+
+</body>  
+
+
+
+<script>
+// Example 1
+
+// let person1 ={
+//     name: "John",
+//     age: 30,
+//     lastname:"doe",
+//     FullName : function() {
+//         console.log(`Hello ${this.name} ${this.age}`)
+//     }
+// }
+// person1.FullName();
+
+// let person2 ={
+//     name: "Sohail",
+//     age: 25,
+//     lastname:"Alam",
+//     FullName : function() {
+//         console.log(`Hello ${this.name} ${this.age}`)
+//     }
+// }
+// person2.FullName();
+
+// Example1 Using constructor
+// Note: Please make sure whenever we are using constructor make sure please first word as capital 
+// Here Person is a constructor 
+
+// function Person(first, last, a){
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = a;
+//     this.sayhi = function(){
+//         console.log("hi")
+//     }
+//     this.changeAge = function(newAge){
+//         this.age = newAge;
+//     }
+// }
+
+let personFullName = new Person("Sohail", "Alam", 27);
+personFullName.changeAge(30);
+let person2FullName = new Person("Wakil", "Alam", 28);
+console.log(personFullName);
+console.log(person2FullName);
+
+
+// ProtoType Example :How to use ProtoType in Javascript
+
+// Constructor2
+
+function Creature(lifeCycle){
+    this.lifespan = lifeCycle;
+}
+Creature.prototype.breath = function(){
+    console.log("breath")
+}
+
+let Creature1 = new Creature(100);
+console.log(Creature1)
+
+// // Constructor 1
+function PersonDetails(fname,lname,age){
+this.FirstName = fname;
+this.lastName = lname;
+this.aged = age;
+}
+PersonDetails.prototype.FullName =function(){
+    console.log(this.FirstName + " " + this.LastName);
+}
+let person1Details = new PersonDetails("Sohail", "Alam", 25)
+let person2Details = new PersonDetails("Wakil", "Alam", 30)
+console.log(person1Details);
+console.log(person2Details);
+
+
+// Class, Object and Inheritance in JavaScript 
+// here person is a class
+class person{
+    constructor(name,age){
+        //console.log("Person created ");
+        this.name = name;
+        this.age =  age;
+    }
+    sayhi(){
+        console.log("Hi")
+    }
+}
+
+let person1 = new person("sohail","alam");
+person1.sayhi();
+console.log(person1);
+
+
+// Use of inhertiance with class
+
+class employee{
+    constructor(n){
+      this.name = n;
+    }
+}
+class manager extends employee{
+    constructor(a,b){
+        super(a);
+        this.department = d;
+    }
+}
+
+let mng1 = new manager("Sohail", "Dot.Net");
+console.log(mng1);
+
+
+// let person2 = new Object(); // This is how new object is created 
+
+// console.log(person2)
+
+// Example 1.2 without constructor 
+// class RailwayForm {
+// submit(){
+// alert("form submitted")
+// }
+// cancel(){
+// alert("Form is cancelled")
+// }
+// }l
+
+// let rohan = new RailwayForm();
+// let sohail = new RailwayForm();  
+
+// rohan.submit();
+// sohail.submit();
+// sohail.cancel();
+
+// Example2 with constructor 
+
+
+</script>
+
+</html>

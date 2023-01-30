@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Object and object method </title>
+</head>
+
+<style> 
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.myStyle{
+ display: none;
+ background: red;
+}
+</style>
+
+
+
+<body>
+  <h3> 
+    JavaScript Accessors (Getters and Setters) 
+  </h3>
+</body>
+
+
+
+<script>
+
+  let person = {
+    name : "Adil",
+    address : "Kawakol",
+    dob : 15/07/1995,
+    // getname:()=>{
+    //   console.log(this.name.toUpperCase())
+    // }
+
+    // this is the example of getter 
+    // get getname(){
+    //   console.log(this.name.toUpperCase())
+    // }
+
+    // this is the example of setter
+    set setname(value) {
+      this.name = value.toUpperCase();
+    } 
+  };
+
+  person.name = "sohail";
+
+  console.log(person.name)
+
+</script>
+
+
+</html>

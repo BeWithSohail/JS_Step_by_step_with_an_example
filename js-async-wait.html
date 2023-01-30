@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Async / Awaits </title>
+</head>
+
+<body>
+  <div id="demo"> </div>
+  <h2> 
+    JavaScript Async/Awaits 
+  </h2>
+
+  <h3> 
+  </h3>
+
+</body>
+
+
+<script>
+
+// JS Async Function 
+// async makes a function return a Promise
+// await makes a function wait for a Promise
+
+// Example1
+// async function test(){
+//   // console.log("2 : Message");
+//   // console.log("3 : Message");
+//   const response = await fetch("json/student_data.json")
+//   const students = await response.json();
+//   return students;
+//   // console.log("4 : Message");
+// }
+// // console.log("1 : Message");
+// test().then(function(result){
+//   console.log(result)
+// }).catch(function(error){
+//   console.log(error)
+// });
+// test().then(function(respond){
+//   console.log(respond)
+// }).catch(function (error) {  
+//   console.log(error);
+// }) ;
+
+// console.log("5 : Message ");
+
+// Example2
+// async function sohail (){
+//   let delhiWeather = new Promise ((resolve,reject)=>{
+//   setTimeout(function(){
+//   resolve("27 Degree")
+//   }, 1000);
+//   });
+
+// let BangloreWeather = new Promise(function(resolve, reject){
+//   setTimeout(function(){
+//   resolve("21 Degree")
+//   },2000);
+//   });
+//   delhiWeather.then(alert);
+//   BangloreWeather.then(alert);
+
+//   console.log("fetching Delhi Weather")
+//   let delhiW = await delhiWeather;
+//   let bangloreW = await BangloreWeather;
+//   return [delhiW, bangloreW]
+// }
+// let name = sohail();
+// console.log(name);
+
+//// Example3 async await error handling 
+
+
+
+</script>
+
+
+</html>
